@@ -35,7 +35,7 @@ export default async function DashBoardPage() {
                 whileInView="visible"
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className=" text-4xl font-bold
-               tracking-tight bg-linear-to-r from-gray-600
+               tracking-tight bg-gradient-to-r from-gray-600
                 to-gray-900 bg-clip-text text-transparent px-2"
               >
                 Your Summaries
@@ -55,7 +55,7 @@ export default async function DashBoardPage() {
             {!hasReachedLimit && (
               <Button
                 variant={"link"}
-                className=" bg-linear-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-full
+                className=" bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-full
              hover:scale-105 shadow-md duration-300 group hover:no-underline"
               >
                 <Link

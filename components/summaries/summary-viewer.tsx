@@ -45,7 +45,7 @@ export default function SummaryViewer({ summary }: { summary: string }) {
       className=" relative px-2
      h-[500px] sm:h-[600px] lg:h-[700px]
       w-full xl:w-[600px] overflow-hidden
-       bg-linear-to-r from-background via background/95
+       bg-gradient-to-r from-background via background/95
         to-rose-500/5
          backdrop-blur-lg shadow-2xl rounded-3xl border border-rose-500/10
      

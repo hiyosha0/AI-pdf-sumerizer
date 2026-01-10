@@ -44,7 +44,7 @@ export default function NavigationControls({
               className={cn(
                 " w-2 h-2 rounded-full transition-all duration-300",
                 currentSection === index
-                  ? " bg-linear-to-r from-rose-500 to-rose-600"
+                  ? " bg-gradient-to-r from-rose-500 to-rose-600"
                   : " bg-rose-500/20 hover:bg-rose-500/30"
               )}
             />

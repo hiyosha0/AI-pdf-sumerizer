@@ -29,7 +29,7 @@ export default async function PlanBadge() {
     <Badge
       variant={"outline"}
       className={cn(
-        " shadow-md rounded-full ml-2 bg-linear-to-r from-amber-100 to-amber-200 border-amber-300 hidden lg:flex flex-row items-center",
+        " shadow-md rounded-full ml-2 bg-gradient-to-r from-amber-100 to-amber-200 border-amber-300 hidden lg:flex flex-row items-center",
         !priceId && " from-red-100 to-red-200 border-red-300"
       )}
     >

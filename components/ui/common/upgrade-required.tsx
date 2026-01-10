@@ -15,7 +15,7 @@ export default function UpgradeRequired() {
          gap-8 text-center max-w-2xl mx-auto"
         >
           <div
-            className=" flex items-center gap-2 bg-linear-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]
+            className=" flex items-center gap-2 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]
            bg-clip-text text-transparent  "
           >
             <Sparkle />
@@ -25,7 +25,7 @@ export default function UpgradeRequired() {
           </div>
           <h1
             className=" text-4xl font-bold tracking-tight
-           bg-linear-to-r from bg-gray-900 to to-gray-600 bg-clip-text text-transparent"
+           bg-gradient-to-r from bg-gray-900 to to-gray-600 bg-clip-text text-transparent"
           >
             Subscription Required
           </h1>

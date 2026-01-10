@@ -15,7 +15,7 @@ import { containerVariants, itemVariants } from "@/utils/constants";
 const btnVariants = {
   scale: 1.05,
   transition: {
-    type: "spring",
+    type: "spring" as const,
     stiffness: 300,
     damping: 10,
   },
@@ -35,7 +35,7 @@ export default function HeroSection() {
       <div className=" ">
         <MotionDiv
           variants={itemVariants}
-          className=" relative p-[1px] overflow-hidden rounded-full bg-linear-to-r
+          className=" relative p-[1px] overflow-hidden rounded-full bg-gradient-to-r
            from-yellow-200 via-blue-400 to-rose-500 animate-gradient-x"
         >
           <Badge
@@ -52,7 +52,7 @@ export default function HeroSection() {
       <MotionH1 className=" font-bold py-6 text-center" variants={itemVariants}>
         Transform PDFs into{" "}
         <span className=" relative inline-block">
-          <MotionSpan whileHover={btnVariants} className=" relative z-10 px-">
+          <MotionSpan whileHover={btnVariants} className=" relative z-10 px-2">
             Instagram
           </MotionSpan>
           <span
@@ -64,18 +64,19 @@ export default function HeroSection() {
         Stories
       </MotionH1>
       <MotionH2
+        variants={itemVariants}
         className=" text-lg sm:text-xl lg:text-2xl text-center
        px-4 lg:px-0 lg:max-w-4xl text-gray-600"
       >
-        Get a beautiful summery reel on the docment in seconds. memorise your
-        lecture slides in easy way.
+        Get a beautiful summary reel on the document in seconds. Memorize your
+        lecture slides in an easy way.
       </MotionH2>
       <MotionDiv variants={itemVariants}>
         <Button
           variant={"link"}
           className=" text-white mt-6 text-base
         sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-16
-        bg-linear-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:scale-110 transform transition-all duration-300
+        bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:scale-110 transform transition-all duration-300
          hover:no-underline shadow-md"
         >
           <Link href={"/#pricing"} className=" flex gap-2 items-center">

@@ -16,7 +16,7 @@ function HeaderSkeleton() {
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
-          className=" text-4xl font-bold tracking-tight bg-linear-to-r from-gray-600
+          className=" text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-600
         to-gray-900 bg-clip-text text-transparent "
         >
           <Skeleton className=" h-10 w-48 bg-gray-200 " />

@@ -23,7 +23,7 @@ const listVariant = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", damping: 20, stiffness: 100 },
+    transition: { type: "spring" as const, damping: 20, stiffness: 100 },
   },
 };
 
@@ -71,7 +71,7 @@ const PricingCard = ({
           <Link
             href={paymentLink || "#"}
             className={cn(
-              " shadow-md w-full rounded-full flex items-center justify-center gap-2 bg-linear-to-r from-rose-800 to-rose-500 hover:scale-110 transform transition-all duration-300 text-white py-2 border-2 font-bold border-white/70",
+              " shadow-md w-full rounded-full flex items-center justify-center gap-2 bg-gradient-to-r from-rose-800 to-rose-500 hover:scale-110 transform transition-all duration-300 text-white py-2 border-2 font-bold border-white/70",
               id === "pro"
                 ? " border-rose-900"
                 : " border-rose-100 from-rose-400 to-rose-500"

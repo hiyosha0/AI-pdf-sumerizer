@@ -17,7 +17,7 @@ export default function EmptySummaryState() {
           </p>
           <Button
             variant={"link"}
-            className=" bg-linear-to-r from-rose-400  to-blue-400 rounded-full
+            className=" bg-gradient-to-r from-rose-400  to-blue-400 rounded-full
              hover:scale-105 shadow-md duration-300 group hover:no-underline text-white"
           >
             <Link href={"/upload"}>

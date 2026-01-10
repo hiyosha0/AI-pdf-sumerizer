@@ -35,7 +35,7 @@ export default function ContentSection({
       hover:shadow-lg transition-all"
             >
               <div
-                className=" absolute inset-0 bg-linear-to-r from-gray-500/10
+                className=" absolute inset-0 bg-gradient-to-r from-gray-500/10
         to-transparent opacity-0
          group-hover:opacity-100 transition-opacity
           rounded-2xl"
@@ -62,7 +62,7 @@ export default function ContentSection({
         hover:shadow-lg transition-all"
           >
             <div
-              className=" absolute inset-0 bg-linear-to-r from-gray-500/10
+              className=" absolute inset-0 bg-gradient-to-r from-gray-500/10
           to-transparent opacity-0
            group-hover:opacity-100 transition-opacity
             rounded-2xl"

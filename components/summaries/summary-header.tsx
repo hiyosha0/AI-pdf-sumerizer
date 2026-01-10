@@ -61,7 +61,7 @@ export default function SummaryHeader({
          lg:tracking-tight"
         >
           <span
-            className=" text-shadow bg-linear-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]
+            className=" text-shadow bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]
            bg-clip-text text-transparent"
           >
             {title}

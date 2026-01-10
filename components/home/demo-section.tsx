@@ -82,11 +82,11 @@ export default function DemoSection() {
               className=" font-bold text-3xl max-w-2xl mx-auto px-4 sm:px-6"
             >
               Watch how sommaire transforms this{" "}
-              <span className=" bg-linear-to-r  from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
+              <span className=" bg-gradient-to-r  from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
                 Computer Science lecture
               </span>{" "}
               into an{" "}
-              <span className=" bg-linear-to-r  from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
+              <span className=" bg-gradient-to-r  from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
                 insta-story
               </span>{" "}
               like summary
