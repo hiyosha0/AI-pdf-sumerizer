@@ -22,7 +22,7 @@ export default function Header() {
            trasnsition duration-200 ease-in-out"
           />
           <span className=" font-extrabold lg:text-xl text-gray-900">
-            Sommaire
+            LearnGram
           </span>
         </NavLink>
       </div>

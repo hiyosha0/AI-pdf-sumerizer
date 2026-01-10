@@ -79,7 +79,7 @@ export default function HeroSection() {
          hover:no-underline shadow-md"
         >
           <Link href={"/#pricing"} className=" flex gap-2 items-center">
-            <span className=" font-bold">Try Sommaire..</span>
+            <span className=" font-bold">Try LearnGram..</span>
             <ArrowRight className=" animate-pulse w-6 h-6" />
           </Link>
         </Button>
