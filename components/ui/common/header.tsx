@@ -5,6 +5,7 @@ import NavLink from "./nav-link";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import PlanBadge from "./plan-badge";
 import { unstable_noStore as noStore } from "next/cache";
+import MobileMenu from "./mobile-menu";
 
 export default function Header() {
   // Opt out of caching for this component
@@ -27,14 +28,15 @@ export default function Header() {
         </NavLink>
       </div>
 
-      <div className=" flex lg:justify-center gap-4 lg:gap-12 lg:items-center">
+      {/* Desktop Navigation */}
+      <div className=" hidden lg:flex lg:justify-center gap-4 lg:gap-12 lg:items-center">
         <NavLink href={"/#pricing"}>Pricing</NavLink>
         <SignedIn>
           <NavLink href={"/dashboard"}>Your summaries</NavLink>
         </SignedIn>
       </div>
 
-      <div className=" flex lg:justify-end lg:flex-1">
+      <div className=" hidden lg:flex lg:justify-end lg:flex-1">
         <SignedIn>
           <div className=" flex gap-2 items-center">
             <NavLink href={"/upload"}>Upload a pdf</NavLink>
@@ -50,6 +52,9 @@ export default function Header() {
           <NavLink href={"/sign-in"}>Sign In</NavLink>
         </SignedOut>
       </div>
+
+      {/* Mobile Menu */}
+      <MobileMenu />
     </nav>
   );
 }
